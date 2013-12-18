@@ -1,0 +1,72 @@
+.header {
+  width: 65%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+}
+
+#title {
+  text-align: center;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 25px;
+}
+
+.powered {
+  font-size: .8em;
+  font-style: italic;
+  float: right;
+  margin-right: 200px;
+  margin-top: -10px;
+}
+
+#drop_zone {
+  border: 2px dashed #CCC;
+  border-radius: 5px;
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  opacity: 0.6;
+}
+
+.drop-text {
+  font-size: 60px;
+  color: #CCC;
+  font-family: Helvetica;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.results-box {
+  border: 1px solid #BBB;
+  border-radius: 5px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  background-color: rgb(254,254,254);
+}
+
+ul {
+  padding: 20px 0;
+  margin: 0;
+}
+
+#results {
+  margin-left: 70px;
+  color: red;
+}
+
+#results li {
+  margin-top: 5px;
+  list-style-type: hiragana;
+}
+
+.line {
+  float: right;
+  color: #000;
+  font-family: monospace;
+  margin-right: 70px;
+}

@@ -1,0 +1,44 @@
+
+<!doctype html>
+
+<html lang=en>
+  <head>
+    <title>Free Linting</title>
+    <link rel=stylesheet href="styles.css">
+  </head>
+
+  <body>
+    <div class="header">
+      <h1 id="title"></h1>
+      <span class="powered">powered by <a href="http://www.jshint.com/">JSHint</a></span>
+    </div>
+
+    <div id="drop_zone">
+      <div class="drop-text">Drop .js file here</div>
+    </div>
+
+    <div class="results-box">
+      <ul id="results"></ul>
+    </div>
+
+    <script src="jshint.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+      (function titles() {
+        // Title quotes
+        title = document.getElementById('title');
+        var sayings = [
+          'Feel the semicolon, be the semicolon.',
+          '"Java is to JavaScript what Car is to Carpet."',
+          '"First, solve the problem. Then, write the code."',
+          '"Before software can be reusable it first has to be usable."',
+          '"Computers are good at following instructions, but not at reading your mind."',
+          '" Programming can be fun, so can cryptography; however they should not be combined."',
+          '" It\'s not at all important to get it right the first time. It\'s vitally important to get it right the last time."'
+        ];
+        var choice = Math.floor( sayings.length * Math.random() );
+        title.innerHTML = sayings[choice].toUpperCase();
+      })();
+    </script>
+  </body>
+</html>
