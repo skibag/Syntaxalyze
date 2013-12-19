@@ -5,12 +5,15 @@ var linter = function(code, name) {
     "eqeqeq": true,
     "eqnull": true,
     "expr": true,
+    "immed": true,
+    "indent": 2,
     "latedef": true,
-    "onevar": true,
+    "newcap": true,
     "noarg": true,
-    "node": true,
+    "undef": true,
+    "unused": true,
     "trailing": true,
-    "unused": true
+    "loopfunc": true
   };
   JSHINT(code, options);
   var errors = JSHINT.data().errors;
