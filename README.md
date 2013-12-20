@@ -1,7 +1,7 @@
 drag-n-drop-linter
 ==================
 
-Drag and drop JS linting for all your linting needs
+Drag and drop JS linting for all your linting needs, powered by [JSHint](https://github.com/jshint/jshint).
 
 ## Instructions
 
