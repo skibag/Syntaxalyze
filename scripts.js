@@ -11,7 +11,6 @@ var linter = function(code, name) {
     "newcap": true,
     "noarg": true,
     "undef": true,
-    "unused": true,
     "trailing": true,
     "loopfunc": true
   };
