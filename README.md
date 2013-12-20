@@ -1,7 +1,7 @@
-drag-n-drop-linter
+Syntaxalyze
 ==================
 
-Drag and drop JS linting for all your linting needs, powered by [JSHint](https://github.com/jshint/jshint).
+Quick drag and drop JS linting for all your linting needs, powered by [JSHint](https://github.com/jshint/jshint).
 
 ## Instructions
 
