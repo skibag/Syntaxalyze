@@ -16,6 +16,7 @@ var linter = function(code, name) {
     "multistr": true,
     "eqnull": true,
     "expr": true,
+    "asi": true, // Removed for later weeks
     "immed": false,
     "latedef": false,
     "newcap": false,
@@ -28,7 +29,7 @@ var linter = function(code, name) {
   var strictOptions = {
     "bitwise": false,
     "camelcase": false,
-    "curly": true, // true after week 1
+    "curly": true, // Added for later weeks
     "eqeqeq": true,
     "es3": false,
     "forin": false,
@@ -36,19 +37,19 @@ var linter = function(code, name) {
     "noempty": false,
     "nonew": true,
     "plusplus": false,
-    "quotmark": true, // after w1
-    "unused": true, // after w1
+    "quotmark": true, // Added for later weeks
+    "unused": true, // Added for later weeks
     "strict": false,
     "laxbreak": true,
     "multistr": true,
     "eqnull": true,
     "expr": true,
     "immed": false,
-    "indent": 2, // use after week 1
+    "indent": 2, // Added for later weeks
     "latedef": false,
     "newcap": false,
     "noarg": false,
-    "undef": true, // use afterw1
+    "undef": true, // Added for later weeks
     "trailing": false,
     "loopfunc": true
   };
