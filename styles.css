@@ -57,11 +57,20 @@ ul {
 #results {
   margin-left: 70px;
   color: red;
+  font-family: Georgia;
 }
 
 #results li {
   margin-top: 5px;
-  list-style-type: hiragana;
+  list-style-type: circle;
+}
+
+#results li.no-error {
+  color: #59E041;
+  list-style-type: none;
+  margin-left: -70px;
+  text-align: center;
+  font-size: 30px;
 }
 
 .line {

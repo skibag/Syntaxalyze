@@ -1,27 +1,76 @@
 //Actual JS Linting
 var linter = function(code, name) {
-  var options = {
-    "curly": true,
+  // For students in their first two weeks of class
+  var laxOptions = {
+    "bitwise": false,
+    "camelcase": false,
     "eqeqeq": true,
+    "es3": false,
+    "forin": false,
+    "freeze": false,
+    "noempty": false,
+    "nonew": true,
+    "plusplus": false,
+    "strict": false,
+    "laxbreak": true,
+    "multistr": true,
     "eqnull": true,
     "expr": true,
-    "immed": true,
-    "indent": 2,
-    "latedef": true,
-    "newcap": true,
-    "noarg": true,
-    "undef": true,
-    "trailing": true,
+    "immed": false,
+    "latedef": false,
+    "newcap": false,
+    "noarg": false,
+    "trailing": false,
     "loopfunc": true
   };
-  JSHINT(code, options);
+
+  // For more advanced students
+  var strictOptions = {
+    "bitwise": false,
+    "camelcase": false,
+    "curly": true, // true after week 1
+    "eqeqeq": true,
+    "es3": false,
+    "forin": false,
+    "freeze": false,
+    "noempty": false,
+    "nonew": true,
+    "plusplus": false,
+    "quotmark": true, // after w1
+    "unused": true, // after w1
+    "strict": false,
+    "laxbreak": true,
+    "multistr": true,
+    "eqnull": true,
+    "expr": true,
+    "immed": false,
+    "indent": 2, // use after week 1
+    "latedef": false,
+    "newcap": false,
+    "noarg": false,
+    "undef": true, // use afterw1
+    "trailing": false,
+    "loopfunc": true
+  };
+
+  JSHINT(code, laxOptions);
   var errors = JSHINT.data().errors;
   if (errors) {
     for (var i = 0; i < errors.length; i++) {
       var error = errors[i];
       listError(error, name);
     }
+  } else {
+    noErrors();
   }
+};
+
+var noErrors = function() {
+  var results = document.getElementById('results');
+  var result = document.createElement('li');
+  result.className = "no-error";
+  result.innerHTML = "No Syntax Errors Detected!!!1!";
+  results.appendChild(result);
 };
 
 // Error list rendering
