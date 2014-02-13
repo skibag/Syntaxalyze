@@ -22,7 +22,8 @@ var linter = function(code, name) {
     "newcap": false,
     "noarg": false,
     "trailing": false,
-    "loopfunc": true
+    "loopfunc": true,
+    "smarttabs": true
   };
 
   // For more advanced students
@@ -51,7 +52,8 @@ var linter = function(code, name) {
     "noarg": false,
     "undef": true, // Added for later weeks
     "trailing": false,
-    "loopfunc": true
+    "loopfunc": true,
+    "smarttabs": true
   };
 
   JSHINT(code, laxOptions);
